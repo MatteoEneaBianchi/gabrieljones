@@ -17,8 +17,8 @@ title: Gabriel Jones
 email: gjones@18f.it
 description: >- # this means to ignore newlines until "baseurl:"
   Benvenuti nel mio mondo!.
-baseurl: "/gabrieljones" # the subpath of your site, e.g. /blog
-url: "https://MatteoEneaBianchi.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://gabrieljones.it" # the base hostname & protocol for your site, e.g. http://example.com
 icon: /assets/images/icon-512.png
 twitter_username: 
 github_username:  
