@@ -3,6 +3,13 @@
   <input type="hidden" name="k8" value="#222222"/>
   <input type="hidden" name="k9" value="#dc4b3c"/>
   <input type="hidden" name="kt" value="h"/>
-  <input type="text" id="search__input" name="q" value="site:gabrieljones.it " placeholder="Cerca..." autocomplete="off">
+  <input type="text" id="search__input" name="q" placeholder="Cerca..." autocomplete="off">
   <button type="submit" class="btn btn-bordered" tabindex="-1">Search</button>
 </form>
+
+<script>
+  document.getElementById('search').onsubmit = function() {
+    var input = document.getElementById('search__input');
+    input.value = 'site:gabrieljones.it ' + input.value;
+  };
+</script>
