@@ -18,34 +18,64 @@
       {%- include google-analytics.html -%}
     {%- endif -%}
     <style>
+
+
+        /* Stile generale della slidebar */
         #slidebar {
             position: fixed;
             top: 0;
-            left: -100%;
-            width: 100%;
+            left: -80%; /* Nasconde la slidebar inizialmente */
+            width: 80%;
             height: 100%;
-            background-color: black;
+            background-color: black; /* Sfondo principale della slidebar */
             transition: left 0.3s ease;
         }
+
+        /* Slidebar aperta */
         #slidebar.open {
             left: 0;
         }
+
+        /* Layout delle due sezioni della slidebar */
         .slidebar-content {
             display: flex;
             height: 100%;
         }
+
+        /* Stile della parte dei link (gialla) */
         .slidebar-links {
             width: 20%;
-            background-color: #fede00;
+            background-color: #fede00; /* Giallo #fede00 */
             color: black;
             padding: 20px;
         }
+
+        /* Stile della parte del testo (nera) */
         .slidebar-text {
             width: 80%;
             background-color: black;
             color: white;
             padding: 20px;
         }
+
+        /* Nascondi la parte del testo sui dispositivi mobili */
+        @media (max-width: 768px) {
+            .slidebar-text {
+                display: none; /* Nasconde completamente il riquadro nero */
+            }
+            
+            .slidebar-links {
+                width: 100%; /* Espande la parte gialla a tutta la larghezza */
+                background-color: #fede00;
+                color: black;
+                padding: 20px;
+            }
+        }
+
+
+
+
+      
         .close-btn {
             position: absolute;
             top: 10px;
@@ -70,12 +100,6 @@
         .navbar.hide {
             transform: translateY(100%); /* Nasconde la navbar scivolando verso il basso */
             opacity: 0; /* Rende la navbar invisibile */
-        }
-                
-        @media (max-width: 768px) {
-            .slidebar-text {
-                display: none; /* Nasconde la parte del testo su dispositivi mobili */
-            }
         }
     </style>
   </head>
