@@ -54,6 +54,23 @@
             color: white;
             cursor: pointer;
         }
+                /* Stili della navbar */
+        .navbar {
+            position: fixed;
+            bottom: 0; /* Inizialmente visibile in basso */
+            left: 0;
+            right: 0;
+            background-color: black;
+            color: yellow;
+            text-align: center;
+            padding: 10px;
+            transition: transform 0.3s ease-out, opacity 0.3s ease-out; /* Transizioni per scivolare via e scomparire */
+        }
+
+        .navbar.hide {
+            transform: translateY(100%); /* Nasconde la navbar scivolando verso il basso */
+            opacity: 0; /* Rende la navbar invisibile */
+        }
     </style>
   </head>
   <body>
@@ -69,10 +86,10 @@
     {% endif %}
 
     {{ content }}
-
+<div class="navbar" id="navbar">
 <div style="position: fixed; bottom: 0; left: 0; right: 0; background-color: black; color: yellow; text-align: center; padding: 10px;"><a id="toggleButton">
   <p>Benvenuti nel mio mondo! Apri la mega slidebar per scoprire tutte le pagine e i miei siti web, le cose più interessanti di me!</p> Apri Ora
-</a></div>
+</a></div></div>
 
 
 <div style="position: relative; margin-top: 50px;">
