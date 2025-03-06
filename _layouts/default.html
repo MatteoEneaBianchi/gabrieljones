@@ -139,5 +139,19 @@ cookieconsent.run({"notice_banner_type":"interstitial","consent_type":"express",
             document.getElementById('slidebar').classList.remove('open');
         });
     </script>    
+
+    <script>
+        // Ottieni l'elemento della navbar
+        const navbar = document.getElementById('navbar');
+
+        // Funzione per gestire lo scroll
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 0) {
+                navbar.classList.add('hide');  // Nascondi completamente la navbar quando si scorre
+            } else {
+                navbar.classList.remove('hide'); // Rendi di nuovo visibile quando si è in cima
+            }
+        });
+    </script>
   </body>
 </html>
