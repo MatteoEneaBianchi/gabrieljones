@@ -71,6 +71,13 @@
             transform: translateY(100%); /* Nasconde la navbar scivolando verso il basso */
             opacity: 0; /* Rende la navbar invisibile */
         }
+                
+        /* Nascondi la parte del testo sui dispositivi con larghezza inferiore a 768px (smartphone) */
+        @media (max-width: 768px) {
+            .slidebar-text {
+                display: none; /* Nasconde la parte del testo su dispositivi mobili */
+            }
+        }
     </style>
   </head>
   <body>
