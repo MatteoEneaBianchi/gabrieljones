@@ -8,5 +8,5 @@ permalink: /sample/
 order: 1
 ---
 <main class="container my-4" markdown="1">
-
+ciao
 </main>
