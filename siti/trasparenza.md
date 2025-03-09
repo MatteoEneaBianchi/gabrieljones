@@ -5,7 +5,6 @@ description: sito trasparenza: il sito di Gabriel Jones di pubblicazione di tutt
 lang: it
 permalink: /siti/trasparenza/
 ---
-<main class="container my-4" markdown="1">
 ![image](https://github.com/user-attachments/assets/9176580b-921c-419a-8fa1-1fcc8a921059)
 
 **Trasparenza - Gabriel Jones**  
@@ -19,4 +18,4 @@ Il sito della trasparenza di **Gabriel Jones** è il punto di accesso pubblico a
 
 Il sito è pensato per essere uno strumento di informazione e trasparenza, offrendo un archivio chiaro e aggiornato sui lavori di Gabriel Jones.  
 
-👉 **Accedi al sito della trasparenza:** [Accedi alla risorsa](https://trasparenza.18f.it/)</main>
+👉 **Accedi al sito della trasparenza:** [Accedi alla risorsa](https://trasparenza.18f.it/)
