@@ -6,22 +6,7 @@ layout: default
   {% include menu.html %}
 {% elsif site.paginate and site.paginate_path and paginator.page > 1 %}
   {% include back-link.html %}
-{% else %}
-  <header class="site-masthead">
-    {% if site.title %}
-    <a href="/">
-      <h1>
-        Gabriel Jones
-      </h1>
-    </a>
-          {% endif %}
-          {% if site.title %}
-      <h2>
-        {{ site.description }}
-      </h2>
-    {% endif %}
-  </header>
-{% endif %}
+
 
 <main class="home" id="main" role="main" aria-label="Content">
 {{ content }}
